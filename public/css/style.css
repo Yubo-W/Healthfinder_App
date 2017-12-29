@@ -1,0 +1,64 @@
+body {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+#title-label, .section-label, .website-description {
+    text-align: center;
+}
+
+#title-label {
+    font-size: 30px;
+}
+
+#logout-button, #login-button {
+    float: right;
+}
+
+.details p {
+    margin-bottom: 0px;
+}
+
+.save-doctor {
+    margin-top: 10px;
+}
+
+.saved {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content {
+    margin-top: 70px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.del {
+    text-align: right;
+    display: inline;
+}
+
+.phone {
+    margin-right: 150px;
+    display: inline-block;
+}
+
+#search-error {
+    display: none;
+}
+
+#search-error.active {
+    display: inline-block;
+}
+
+#results {
+    display: none;
+}
+
+#results.active {
+    display: inline-block;
+}

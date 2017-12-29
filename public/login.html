@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">    
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Healthcare Finder</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title-label">Healthcare Finder</h1>
+        <p class="website-description">
+            We will help you find the right healthcare provider. With your insurance, specific doctor, location, or the type of doctor you are looking for, we match you up with the most optimal doctor or healthcare provider for your specific treatment needs.
+            <br>
+            <br>
+            Please login or sign up so you can find the best healthcare provider.
+        </p>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6">
+				<div id="login-error" class="alert alert-danger hidden" role="alert"></div>
+                <form id="login-form" class="login">
+                    <legend class="section-label">Login</legend>
+                    <ul class="list-unstyled">
+                        <li class="form-group">
+                            <label for="login-email" class="control-label">Email:</label>
+                            <input type="email" id="login-email" placeholder="email@example.com" class="form-control" />
+                        </li>
+                        <li class="form-group">
+                            <label for="login-password" class="control-label">Password:</label>
+                            <input type="password" id="login-password" placeholder="*******" class="form-control" />
+                        </li>
+                        <li class="form-group">
+                            <button type="submit" id="login" class="btn btn-primary">Login</button>
+                        </li>
+                    </ul> 
+                </form>
+            </div>
+            <div class="col-sm-6">
+                <form id="signup-form" class="signup">
+                    <div id="signup-error" class="alert alert-danger hidden" role="alert"></div>
+                
+                    <legend class="section-label">Sign Up</legend>
+                    <ul class="list-unstyled">
+                        <li class="form-group">
+                            <label for="signup-name" class="control-label">Name:</label>
+                            <input type="text" id="signup-name" placeholder="John Doe" class="form-control" />
+                        </li>
+                        <li class="form-group">
+                            <label for="signup-email" class="control-label">Email:</label>
+                            <input type="email" id="signup-email" placeholder="email@example.com" class="form-control" />
+                        </li>
+                        <li class="form-group">
+                            <label for="signup-password" class="control-label">Password:</label>
+                            <input type="password" id="signup-password" placeholder="*******" class="form-control" />
+                        </li>
+                        <li class="form-group">
+                            <label for="signup-password-confirm" class="control-label">Password: (Confirm)</label>
+                            <input type="password" id="signup-password-confirm" placeholder="*******" class="form-control" />
+                        </li>
+                        <li class="form-group">
+                            <button type="submit" id="signup" class="btn btn-primary">Sign Up</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script src="js/login.js" type="text/javascript"></script>
+</body>
+</html>
+
+
+</html>
